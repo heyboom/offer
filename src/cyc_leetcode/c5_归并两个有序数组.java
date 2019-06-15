@@ -1,4 +1,4 @@
-package cyc_leetcode_双指针;
+package cyc_leetcode;
 
 public class c5_归并两个有序数组 {
 

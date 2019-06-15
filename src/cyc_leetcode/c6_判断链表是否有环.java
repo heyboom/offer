@@ -1,4 +1,4 @@
-package cyc_leetcode_双指针;
+package cyc_leetcode;
 
 public class c6_判断链表是否有环 {
 

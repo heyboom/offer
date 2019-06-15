@@ -1,4 +1,4 @@
-package cyc_leetcode_双指针;
+package cyc_leetcode;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package cyc_leetcode_双指针;
+package cyc_leetcode;
 
 public class c3_反转字符串中的元音字符 {
 
