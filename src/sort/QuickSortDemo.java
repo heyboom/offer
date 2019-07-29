@@ -18,7 +18,7 @@ public class QuickSortDemo {
 	public static void quickSort(int[] data, int low, int high) {
 		if(low < high) {
 			int pivotpos = partition(data, low, high);
-			quickSort(data, low, pivotpos);
+			quickSort(data, low, pivotpos - 1);
 			quickSort(data, pivotpos + 1, high);
 		}
 	}

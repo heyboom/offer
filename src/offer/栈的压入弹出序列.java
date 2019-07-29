@@ -23,17 +23,13 @@ public class 栈的压入弹出序列 {
 		int j = 0;
 		for(int i = 0; i < pushA.length; i++) {
 			stack.push(pushA[i]);
-			if(!stack.isEmpty() && stack.peek() == popA[j]) {
+			while(!stack.isEmpty() && stack.peek() == popA[j]) {
 				stack.pop();
 				j++;
 			}
 		}
-		while(j < popA.length) {
-			if(!stack.isEmpty() && stack.pop() == popA[j]) {
-				j++;
-			}else {
-				return false;
-			}
+		if (j < popA.length) {
+			return false;
 		}
 		return true;
 	}

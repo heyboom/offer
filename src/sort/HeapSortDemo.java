@@ -38,11 +38,11 @@ public class HeapSortDemo {
 	public static void heapSort(int[] data) {
 		heapBuild(data);
 		int len = data.length;
-		for(int i = len - 1; i > 0; i--) {
-			int temp = data[i];
-			data[i] = data[0];
-			data[0] = temp;
-			adjustDown(data, 0, i);
+		for (int i = 1; i < len; i++) {	//循环次数
+			int tmp = data[0];
+			data[0] = data[len - i];
+			data[len - i] = tmp;
+			adjustDown(data, 0, len - i);
 		}
 	}
 	
